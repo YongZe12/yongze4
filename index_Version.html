@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🐘Save Mother Nature🐘 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Save Mother Nature</h1>
+        <ul>
+            <li><a href="#" class="tab-link active" data-tab="definition">Definition</a></li>
+            <li><a href="#" class="tab-link" data-tab="causes">Causes</a></li>
+            <li><a href="#" class="tab-link" data-tab="effects">Effects</a></li>
+            <li><a href="#" class="tab-link" data-tab="solutions">Solutions</a></li>
+            <li><a href="#" class="tab-link" data-tab="game">Game</a></li>
+            <li><a href="#" class="tab-link" data-tab="quiz">Quiz</a></li>
+            <li><a href="#" class="tab-link" data-tab="feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="definition" class="tab-content active">
+            <h2>Definition</h2>
+            <p>
+                <strong>SDG 15: Life on Land</strong> aims to protect, restore and promote sustainable use of terrestrial ecosystems, manage forests sustainably, halt and reverse land degradation, and halt biodiversity loss.<br><br>
+                It focuses on ensuring the conservation of plants, animals, and their habitats so that life can thrive on land. 
+            </p>
+            <img src="img/land-life.jpg" alt="Life on land" class="banner-img"/>
+        </section>
+
+        <section id="causes" class="tab-content">
+            <h2>Causes of Land Degradation & Biodiversity Loss</h2>
+            <ul>
+                <li>Deforestation for farming and urban expansion</li>
+                <li>Pollution from factories and human waste</li>
+                <li>Poor land management and overgrazing</li>
+                <li>Climate change affecting habitats</li>
+                <li>Illegal hunting and poaching of animals</li>
+            </ul>
+            <img src="img/deforestation.png" alt="Deforestation" class="icon-img"/>
+        </section>
+
+        <section id="effects" class="tab-content">
+            <h2>Effects on Nature</h2>
+            <ul>
+                <li>Loss of animal and plant species (extinction)</li>
+                <li>Soil erosion and poor crop growth</li>
+                <li>Floods, droughts, and climate instability</li>
+                <li>Less clean air and water</li>
+                <li>Unbalanced food chains</li>
+            </ul>
+            <img src="img/extinction.png" alt="Extinction" class="icon-img"/>
+        </section>
+
+        <section id="solutions" class="tab-content">
+            <h2>Solutions for Life on Land</h2>
+            <ul>
+                <li>Plant more trees and protect forests</li>
+                <li>Recycle and reduce pollution</li>
+                <li>Support sustainable farming</li>
+                <li>Learn about and respect wildlife</li>
+                <li>Stop hunting endangered animals</li>
+                <li>Participate in local clean-up activities!</li>
+            </ul>
+            <img src="img/planting.jpg" alt="Planting trees" class="banner-img"/>
+        </section>
+
+        <section id="game" class="tab-content">
+            <h2>Save the Animals Game!</h2>
+            <div id="game-area">
+                <p>Animals appear on the land! <br>Click to save them before time runs out!</p>
+                <p><span id="score">Score: 0</span></p>
+                <button id="start-game">Start Game</button>
+                <div id="animals"></div>
+            </div>
+        </section>
+
+        <section id="quiz" class="tab-content">
+            <h2>SDG 15 Animal & Ecosystem Quiz</h2>
+            <div id="quiz-area">
+                <form id="quiz-form">
+                    <div class="quiz-question">
+                        <label>1. What does SDG 15 aim to protect?</label><br>
+                        <input type="radio" name="q1" value="oceans"> Oceans<br>
+                        <input type="radio" name="q1" value="land"> Land<br>
+                        <input type="radio" name="q1" value="clouds"> Clouds<br>
+                    </div>
+
+                    <div class="quiz-question">
+                        <label>2. What can you do to help nature?</label><br>
+                        <input type="radio" name="q2" value="litter"> Litter outside<br>
+                        <input type="radio" name="q2" value="plant"> Plant trees<br>
+                        <input type="radio" name="q2" value="burn"> Burn plastic<br>
+                    </div>
+
+                    <div class="quiz-question">
+                        <label>3. Which animal is endangered?</label><br>
+                        <input type="radio" name="q3" value="lion"> Lion<br>
+                        <input type="radio" name="q3" value="dog"> Dog<br>
+                        <input type="radio" name="q3" value="rabbit"> Rabbit<br>
+                    </div>
+
+                    <button type="submit">Submit Quiz</button>
+                </form>
+                <p id="quiz-feedback"></p>
+            </div>
+        </section>
+
+        <section id="feedback" class="tab-content">
+            <h2>We want your feedback!</h2>
+            <form id="feedbackForm" method="post" action="feedback.php">
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="message">Your message about nature:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Send Feedback</button>
+            </form>
+            <div id="feedback-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for SDG 15: Life on Land &copy; 2025</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
